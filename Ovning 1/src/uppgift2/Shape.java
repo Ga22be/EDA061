@@ -3,8 +3,13 @@ package uppgift2;
 import java.awt.Graphics;
 
 public abstract class Shape {
-	protected int x;
-	protected int y;
+	private int x;
+	private int y;
+	
+	public Shape(int x, int y){
+		this.x = x;
+		this.y = y;
+	}
 	
 	public abstract void paint(Graphics g);
 	
